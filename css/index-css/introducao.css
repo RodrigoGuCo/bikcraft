@@ -1,0 +1,195 @@
+.introducao {
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 87%,
+    #fff 87%,
+    #fff 100%
+  );
+  margin: 0;
+  margin-bottom: 120px;
+}
+
+.introducao > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0 auto;
+  max-width: 1400px;
+  place-items: center;
+  justify-items: start;
+  gap: 90px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.introducao > div div:first-child {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.introducao > div div:first-child:after {
+  content: "";
+  display: block;
+  position: relative;
+  background: url(/img/dec/bottom-left.svg);
+  height: 52px;
+  width: 52px;
+  right: 100px;
+  top: 70px;
+}
+
+.introducao > div div:first-child * {
+  max-width: 550px;
+}
+
+.introducao > div div:first-child p {
+  line-height: 36px;
+  margin-bottom: 40px;
+}
+
+.introducao img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .introducao {
+    background: #000;
+    margin: 0;
+    margin-bottom: 120px;
+    padding-bottom: 30px;
+  }
+
+  .introducao > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    place-items: center;
+    justify-items: center;
+    gap: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .introducao > div div:first-child {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .introducao > div div:first-child h1 {
+    font-size: 3.9rem;
+    margin-bottom: 0px;
+  }
+
+  .introducao > div div:first-child p {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .introducao > div div:first-child * {
+    max-width: 979px;
+  }
+
+  .introducao > div div:first-child:after {
+    display: none;
+  }
+
+  .introducao img {
+    height: 290px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    content: url("/img/bicicletas/nimbus.jpg");
+  }
+
+  .introducao > div div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) {
+  .introducao {
+    background: #000;
+    margin: 0;
+    margin-bottom: 120px;
+    padding-bottom: 30px;
+  }
+
+  .introducao > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    place-items: center;
+    justify-items: center;
+    gap: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .introducao > div div:first-child {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .introducao > div div:first-child h1 {
+    line-height: 50px;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .introducao > div div:first-child p {
+    font-size: 1.2rem;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    line-height: 24px;
+  }
+
+  .introducao > div div:first-child * {
+    max-width: 979px;
+  }
+
+  .introducao > div div:first-child:after {
+    display: none;
+  }
+
+  .introducao img {
+    height: 290px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    content: url("/img/bicicletas/nimbus.jpg");
+  }
+
+  .introducao > div div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introducao .btn {
+    font-size: 0.9rem;
+    padding: 15.2px 30, 4px;
+  }
+}
+
+/* Celulares*/
+@media (max-width: 480px) {
+  .introducao {
+    background: #000;
+    margin: 0;
+    margin-bottom: 80px;
+    padding-bottom: 30px;
+  }
+
+  .introducao > div div:first-child h1 {
+    line-height: 35px;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+}

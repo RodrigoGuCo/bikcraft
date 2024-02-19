@@ -1,0 +1,15 @@
+@import url(global.css);
+@import url(header.css);
+@import url(index-css/introducao.css);
+@import url(index-css/opcoes.css);
+@import url(index-css/tecnologias.css);
+@import url(index-css/parceiros.css);
+@import url(index-css/comentario.css);
+@import url(index-css/seguros.css);
+@import url(footer.css);
+@import url(bicicletas.css);
+@import url(bicicleta-interna.css);
+@import url(escolhaseguro.css);
+@import url(contato.css);
+@import url(orcamento.css);
+@import url(termos.css);

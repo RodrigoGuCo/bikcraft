@@ -1,0 +1,88 @@
+.parceiros {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  margin-bottom: 120px;
+}
+
+.parceiros > div ul {
+  max-width: 1400px;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.parceiros > div ul li {
+  display: flex;
+  padding: 32px;
+}
+
+.parceiros > div img {
+  max-width: 100%;
+  margin: auto;
+}
+
+.bdo-b {
+  border-bottom: #ededed solid 2px;
+}
+
+.bdo-r {
+  border-right: #ededed solid 2px;
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .parceiros {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-bottom: 50px;
+  }
+
+  .parceiros h1 {
+    font-size: 3.4rem;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .parceiros > div ul li {
+    display: flex;
+    padding: 32px;
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) { 
+  .parceiros { 
+    padding: 0px 20px;
+    margin-bottom: 40px;
+  }
+
+  .parceiros h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .parceiros > div ul li {
+    display: flex;
+    padding: 20px;
+  }
+}
+
+ /* Celulares*/
+ @media (max-width: 480px) { 
+  .parceiros h1 {
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+
+  .parceiros > div ul li {
+    display: flex;
+    padding: 10px;
+  }
+ }

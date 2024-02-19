@@ -1,0 +1,536 @@
+.titulo-bg {
+  background: #111;
+}
+
+.titulo {
+  padding-top: 60px;
+  padding: 0px 40px;
+  padding-top: 60px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 40px;
+  padding: 0px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px;
+  position: relative;
+}
+
+.bicicleta::before {
+  content: url(/img/dec/bottom-left.svg);
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+}
+
+.bicicleta-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicleta-imagens img {
+  max-width: 100%;
+  min-width: 150px;
+  flex: 1;
+  border-radius: 5px;
+}
+
+.bicicleta-imagens img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-conteudo > p {
+  max-width: 550px;
+  margin-bottom: 45px;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: start;
+  margin-bottom: 40px;
+  gap: 0px 12px;
+  max-width: 440px;
+}
+
+.bicicleta-comprar .btn {
+  grid-row: 1 / span 2;
+}
+
+.bicicleta-comprar span {
+  position: relative;
+  grid-column: 2;
+  background: #000;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.bicicleta-comprar span img {
+  position: relative;
+  top: 3px;
+}
+
+.bicicleta-comprar span:last-child {
+  margin-top: 9px;
+}
+
+.bicicleta-informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #000;
+  place-items: start;
+  border-radius: 5px;
+  padding: 32px;
+  gap: 35px 32px;
+  max-width: 500px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-informacoes p,
+.bicicleta-informacoes h3 {
+  max-width: 290px;
+  margin: 0;
+}
+
+.bicicleta-informacoes h3 {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.bicicleta-ficha {
+  background: #000;
+  border-radius: 5px;
+  padding: 32px;
+  max-width: 500px;
+}
+.bicicleta-ficha li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #111 solid 1px;
+  padding: 5px 0px;
+}
+
+.escolhas-bg {
+  padding-top: 90px;
+}
+
+.escolhas-titulo {
+  margin: 0 auto;
+  padding: 0px 40px;
+  max-width: 1400px;
+  margin-bottom: 40px;
+}
+
+.escolhas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+  margin-bottom: 120px;
+}
+
+.escolhas-conteudo img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.escolhas-conteudo h2 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  margin-left: px;
+  color: #111;
+}
+
+.escolhas-conteudo p {
+  margin-left: 20px;
+}
+
+.escolhas-conteudo a {
+  text-decoration: none;
+}
+
+.escolhas-conteudo h2::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-color: #ffbb00;
+  width: 12px;
+  height: 8px;
+  bottom: 6px;
+  margin-right: 8px;
+}
+
+.pedale-bg {
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 17%,
+    #111 17%,
+    #111 85%,
+    #000 85%,
+    #000 100%
+  );
+}
+
+.pedale-seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 40px;
+  gap: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  place-items: center;
+  justify-items: start;
+  position: relative;
+}
+
+.pedale-seguro::after {
+  content: url(/img/dec/bottom-right.svg);
+  position: absolute;
+  right: 50px;
+  bottom: 160px;
+}
+
+.pedale-seguro img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.pedale-seguro h1,
+.pedale-seguro p {
+  max-width: 520px;
+}
+
+.pedale-seguro h1 {
+  margin-bottom: 32px;
+}
+
+.pedale-seguro p {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1145px) {
+  .pedale-conteudo h1 {
+    font-size: 2.5rem;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+
+  .bicicleta-comprar .btn {
+    font-size: 16px;
+  }
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .titulo {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .titulo h1 {
+    font-size: 3rem;
+  }
+
+  .bicicleta {
+    padding: 30px 20px;
+  }
+
+  .bicicleta-comprar .btn {
+    font-size: 14px;
+    padding: 16px 26px;
+    margin-top: 3px;
+  }
+
+  .escolhas-bg {
+    padding-top: 30px;
+  }
+
+  .escolhas-titulo {
+    font-size: 3rem;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+  }
+
+  .escolhas-conteudo {
+    padding: 0px 20px;
+    margin-bottom: 8%;
+  }
+
+  .pedale-seguro {
+    background: linear-gradient(
+      to bottom,
+      #fff 0%,
+      #fff 10%,
+      #111 10%,
+      #111 90%,
+      #000 90%,
+      #000 100%
+    );
+  }
+
+  .pedale-seguro h1 {
+    font-size: 2rem;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .pedale-seguro p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+  .pedale-seguro .btn {
+    font-size: 14px;
+    padding: 16px 26px;
+    margin-top: 3px;
+  }
+
+  .pedale-seguro::after {
+    display: none;
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) {
+  .titulo {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .titulo p {
+    margin-bottom: 0px;
+  }
+
+  .titulo h1 {
+    font-size: 3rem;
+  }
+
+  .bicicleta {
+    padding: 30px 20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  .bicicleta-conteudo > p {
+    margin-bottom: 10px;
+  }
+
+  .bicicleta-conteudo h2 {
+    font-size: 1rem;
+  }
+
+  .bicicleta-comprar {
+    grid-template-columns: 1fr 1.6fr;
+  }
+
+  .bicicleta-comprar .btn {
+    font-size: 14px;
+    padding: 16px 26px;
+    margin-top: 3px;
+  }
+
+  .bicicleta-informacoes,
+  .bicicleta-ficha {
+    max-width: 767px;
+  }
+
+  .escolhas-bg {
+    padding-top: 20px;
+  }
+
+  .escolhas-titulo {
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .escolhas-titulo h1 {
+    font-size: 3rem;
+  }
+
+  .escolhas-conteudo {
+    padding: 0px 20px;
+    margin-bottom: 8%;
+  }
+
+  .escolhas-conteudo h2 {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  .escolhas-conteudo p {
+    font-size: 1rem;
+  }
+
+  .pedale-seguro {
+    background: linear-gradient(
+      to bottom,
+      #fff 0%,
+      #fff 10%,
+      #111 10%,
+      #111 100%
+    );
+    padding: 0px 20px;
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+
+  .pedale-seguro img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .pedale-seguro h1 {
+    font-size: 2rem;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .pedale-seguro p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+  .pedale-seguro .btn {
+    font-size: 14px;
+    padding: 16px 26px;
+    margin-top: 3px;
+  }
+
+  .bicicleta::before {
+    display: none;
+  }
+
+  .pedale-seguro::after {
+    display: none;
+  }
+}
+
+/* Celulares*/
+@media (max-width: 480px) {
+  .titulo p {
+    font-size: 1rem;
+  }
+
+  .titulo h1 {
+    font-size: 2rem;
+    margin-top: -10px;
+  }
+
+  .bicicleta {
+    padding-top: 0px;
+    gap: 10px;
+  }
+
+  .bicicleta-conteudo p {
+    font-size: 1rem;
+  }
+
+  .bicicleta-comprar {
+    margin-bottom: 20px;
+  }
+
+  .bicicleta-comprar .btn {
+    margin-top: 10px;
+    font-size: 12px;
+    padding: 10px 11px;
+  }
+
+  .bicicleta-informacoes h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .escolhas-bg {
+    padding-top: 0px;
+  }
+
+  .escolhas-titulo {
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    margin-bottom: 0px;
+  }
+
+  .escolhas-titulo h1 {
+    font-size: 2rem;
+  }
+
+  .escolhas-conteudo {
+    padding: 0px 20px;
+    margin-bottom: 8%;
+    overflow-y: auto;
+    padding-bottom: 15px;
+  }
+
+  .escolhas-conteudo h2 {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  .escolhas-conteudo p {
+    font-size: 1rem;
+  }
+
+  .escolhas-conteudo li {
+    min-width: 260px;
+  }
+
+  .pedale-seguro {
+    background: linear-gradient(
+      to bottom,
+      #fff 0%,
+      #fff 10%,
+      #111 10%,
+      #111 100%
+    );
+    padding: 0px 20px;
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+
+  .pedale-seguro img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .pedale-seguro h1 {
+    font-size: 2rem;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .pedale-seguro p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+  .pedale-seguro .btn {
+    font-size: 14px;
+    padding: 16px 26px;
+    margin-top: 3px;
+  }
+
+  .bicicleta::before {
+    display: none;
+  }
+
+  .pedale-seguro::after {
+    display: none;
+  }
+}

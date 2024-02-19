@@ -1,0 +1,159 @@
+.tecnologias {
+  background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    #fff 8%,
+    #111 8%,
+    #111 93%,
+    #fff 93%,
+    #fff 100%
+  );
+  position: relative;
+}
+
+.tecnologias-conteudo {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 40px;
+  place-items: center;
+}
+
+.tectitulo {
+  max-width: 600px;
+}
+
+.tectexto {
+  max-width: 530px;
+}
+
+.tecinf {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.tecinf p {
+  max-width: 260px;
+}
+
+.tecfoto {
+  max-width: 100%;
+}
+
+.tecnologias::before {
+  content: url(/img/dec/bottom-left.svg);
+  position: absolute;
+  max-width: 100%;
+  display: block;
+  left: 30px;
+  bottom: 120px;
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tecnologias {
+    background: #111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .tecnologias-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    place-items: start;
+  }
+
+  .tecfoto {
+    margin-top: 20px;
+    object-position: bottom;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .tectitulo {
+    max-width: 979px;
+    font-size: 3.6rem;
+    line-height: 60px;
+    margin-bottom: 0px;
+  }
+
+  .tectexto {
+    margin-top: 20px;
+    max-width: 979px;
+  }
+
+  .tecinf {
+    margin-top: 30px;
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) {
+  .tecnologias {
+    background: #111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .tecnologias-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    place-items: start;
+  }
+
+  .tecfoto {
+    margin-top: 20px;
+    object-position: bottom;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .tectitulo {
+    max-width: 979px;
+    font-size: 2.5rem;
+    line-height: 35px;
+    margin-bottom: 0px;
+  }
+
+  .tectexto {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: 979px;
+    font-size: 1.2rem;
+    line-height: 24px;
+  }
+
+  .tecinf {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .tecinf p {
+    margin-top: 0px;
+  }
+}
+
+/* Celulares*/
+@media (max-width: 480px) {
+  .tectitulo {
+    max-width: 979px;
+    font-size: 2rem;
+    line-height: 35px;
+    margin-bottom: 0px;
+  }
+
+  .tecava {
+    font-size: 1.2rem;
+  }
+}

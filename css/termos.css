@@ -1,0 +1,67 @@
+.termos-titulo {
+  background: #111;
+}
+
+.termos-titulo {
+  padding: 60px 40px;
+  margin:0 auto;
+  max-width: 1400px;
+}
+
+.termos-conteudo {
+  padding: 80px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.termos-conteudo h1:not(:first-child) {
+  margin-top: 48px;
+}
+
+.termos-conteudo h1 {
+  margin-bottom: 20px;
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) {
+  .termos-titulo {
+    padding: 25px 20px;
+    padding-bottom: 15px;
+  }
+
+  .termos-titulo h1 {
+    font-size: 2.5rem;
+  }
+
+  .termos-conteudo {
+    padding: 40px 20px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .termos-titulo {
+    padding: 15px 20px;
+    padding-bottom: 15px;
+  }
+
+  .termos-titulo h1 {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .termos-conteudo {
+    padding: 20px 20px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 320px) {
+  .termos-titulo p {
+    font-size: 1rem;
+  }
+
+  .termos-titulo h1 {
+    font-size: 1.5rem;
+  }
+}

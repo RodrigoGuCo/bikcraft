@@ -1,0 +1,291 @@
+.nossasbicicletas {
+  background: #111;
+  padding: 60px 40px;
+}
+
+.nossasbicicletas > div {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  margin: 0 auto;
+  padding: 62px 40px;
+  place-items: center;
+  justify-items: start;
+  position: relative;
+}
+
+.bicicletas div {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: start;
+}
+
+.bicicletas div p {
+  grid-column: 1 / span 2;
+  max-width: 500px;
+  font-size: 1.3rem;
+  line-height: 26px;
+}
+
+.bicicletas div li:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.magicmight {
+  position: relative;
+  background: linear-gradient(to right, #fff 0%, #fff 18%, #111 18%, #111 100%);
+}
+
+.bicicletasconteudo img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  min-height: 500px;
+}
+
+.bicicletas ul {
+  list-style-type: none;
+  padding: 0;
+  grid-column: 1 / 2;
+}
+
+.bicicletas a {
+  margin-top: 120px;
+  margin-left: 90px;
+}
+
+.bicicletas h1 {
+  font-size: 3.6rem;
+  margin-bottom: 50px;
+}
+
+.bicicletas h1,
+.bicicletas p {
+  grid-column: 1 / span 2;
+  line-height: 24px;
+}
+
+.valor {
+  position: absolute;
+  background-color: #000;
+  color: white;
+  padding: 8px 16px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  right: 0px;
+  top: 45px;
+}
+
+.bicicletas::after {
+  position: absolute;
+  display: block;
+  content: url(/img/dec/top-right.svg);
+  right: 60px;
+  top: 63px;
+  width: 52px;
+  height: 52px;
+}
+
+@media (max-width: 1045px) {
+  .bicicletas li {
+    font-size: 1rem;
+  }
+
+  .bicicletas::after {
+    display: none;
+  }
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .nossasbicicletas {
+    padding: 40px 20px;
+    padding-bottom: 20px;
+  }
+
+  .nossasbicicletas h1 {
+    font-size: 3rem;
+  }
+
+  .bicicletas div h1 {
+    grid-column: 1 / span 2;
+    margin-bottom: 30px;
+  }
+
+  .bicicletas div p {
+    grid-column: 1 / span 2;
+    max-width: 670px;
+    margin-bottom: 0px;
+  }
+
+  .bicicletas div li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .bicicletas div li:first-child {
+    margin-top: 20px;
+  }
+
+  .bicicletas {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    gap: 70px;
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  .bicicletas a {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .magicmight {
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      #fff 0%,
+      #fff 13%,
+      #111 13%,
+      #111 100%
+    );
+  }
+
+  .bicicletas > div {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas div h1 {
+    grid-column: 1;
+  }
+
+  .bicicletas div p {
+    grid-column: 1;
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) {
+  .nossasbicicletas {
+    padding: 40px 20px;
+    padding-bottom: 20px;
+  }
+
+  .nossasbicicletas h1 {
+    font-size: 3rem;
+  }
+
+  .bicicletas h1 {
+    font-size: 3.5rem;
+  }
+
+  .bicicletas div h1 {
+    grid-column: 1 / span 2;
+    margin-bottom: 30px;
+  }
+
+  .bicicletasconteudo img {
+    min-height: 350px;
+  }
+
+  .bicicletas div p {
+    grid-column: 1 / span 2;
+    max-width: 670px;
+    margin-bottom: 0px;
+  }
+
+  .bicicletas div li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .bicicletas div li:first-child {
+    margin-top: 20px;
+  }
+
+  .bicicletas {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    gap: 70px;
+  }
+  .bicicletas {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  .bicicletas a {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .magicmight {
+    position: relative;
+    background: linear-gradient(
+      to bottom,
+      #fff 0%,
+      #fff 13%,
+      #111 13%,
+      #111 100%
+    );
+  }
+
+  .bicicletas .btn {
+    font-size: 16px;
+  }
+
+  .bicicletas > div {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas div h1 {
+    grid-column: 1;
+  }
+
+  .bicicletas div p {
+    grid-column: 1;
+  }
+}
+
+/* Celulares*/
+@media (max-width: 480px) {
+  .nossasbicicletas {
+    padding: 20px 20px;
+    padding-bottom: 5px;
+  }
+
+  .nossasbicicletas > div > h1 {
+    font-size: 2rem;
+  }
+
+  .nossasbicicletas > div > p {
+    font-size: 1rem;
+  }
+
+  .bicicletas > div {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas div h1 {
+    grid-column: 1;
+  }
+
+  .bicicletas div p {
+    grid-column: 1;
+  }
+
+  .bicicletas div h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .bicicletas .btn {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+}

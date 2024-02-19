@@ -1,0 +1,358 @@
+.nossocontato-bg {
+  background: linear-gradient(
+    to bottom,
+    #111 0%,
+    #111 70%,
+    #f7f7f7 70%,
+    #f7f7f7 100%
+  );
+  margin-bottom: 120px;
+}
+
+.contato-titulo {
+  padding: 60px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+  position: relative;
+}
+
+.contato-titulo::after {
+  content: url(/img/dec/top-right.svg);
+  position: absolute;
+  max-width: 100%;
+  top: 60px;
+  right: 40px;
+}
+
+.contato-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 0px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.loja-online {
+  background: #000;
+  padding: 60px;
+}
+
+.loja-online .redes:not(:last-child) {
+  margin-right: 32px;
+}
+
+.enviar-mensagem {
+  background: #fff;
+  padding: 60px;
+}
+
+.enviar-mensagem form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 20px;
+}
+
+.enviar-mensagem form div {
+  display: grid;
+}
+
+.enviar-mensagem input {
+  background: #f7f7f7;
+  border: #ededed solid 1px;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.email-div {
+  grid-column: 1 / span 2;
+}
+
+.mensagem-div {
+  grid-column: 1 / span 2;
+}
+
+.enviar-mensagem textarea {
+  background: #f7f7f7;
+  border: #ededed solid 1px;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.enviar-mensagem button {
+  max-width: 250px;
+  border: none;
+}
+
+.lojas-bg {
+  margin-bottom: 120px;
+}
+
+.lojas-titulo {
+  padding: 0px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+  margin-bottom: 60px;
+}
+
+.lojas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+  gap: 40px;
+}
+
+.lojas-conteudo img {
+  max-width: 100%;
+}
+
+.lojas div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 32px 60px;
+  background: #fff;
+  margin-top: -7px;
+  position: relative;
+}
+
+.lojas h1 {
+  grid-column: 1 / span 2;
+  margin: 32px 0px;
+  margin-top: 0px;
+}
+
+.lojas div::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: #ffbb00;
+  width: 12px;
+  height: 8px;
+  top: 53px;
+  left: 35px;
+}
+
+.lojas p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 12px;
+  border-left: #ededed solid 2px;
+}
+
+.lojas h2 {
+  margin-top: 32px;
+  position: relative;
+}
+
+.lojas h2::before {
+  position: absolute;
+  display: inline-block;
+  content: url(/img/icones/horario.svg);
+  width: 20px;
+  height: 20px;
+  left: -28px;
+  bottom: 1px;
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .nossocontato-bg {
+    margin-bottom: 50px;
+  }
+
+  .enviar-mensagem form {
+    grid-template-columns: 1fr;
+  }
+
+  .email-div {
+    grid-column: 1;
+  }
+
+  .mensagem-div {
+    grid-column: 1;
+  }
+
+  .contato-titulo h1 {
+    margin-bottom: 0px;
+  }
+
+  .lojas-bg {
+    margin-bottom: 50px;
+  }
+
+  .lojas-titulo {
+    margin-bottom: 40px;
+  }
+
+  .lojas-titulo h1 {
+    margin: 0;
+  }
+
+  .lojas div {
+    grid-template-columns: 1fr;
+  }
+
+  .lojas-conteudo h1 {
+    font-size: 1.5rem;
+    grid-column: 1;
+    margin-bottom: 10px;
+  }
+
+  .lojas-conteudo h2 {
+    margin-top: 20px;
+  }
+
+  .lojas div::before {
+    top: 45px;
+  }
+
+  .contato-titulo::after {
+    display: none;
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) {
+  .nossocontato-bg {
+    margin-bottom: 50px;
+  }
+
+  .contato-titulo {
+    padding: 20px 20px;
+    padding-bottom: 10px;
+  }
+
+  .contato-titulo h1 {
+    font-size: 3rem;
+  }
+
+  .enviar-mensagem {
+    padding: 20px 40px;
+  }
+
+  .enviar-mensagem form {
+    grid-template-columns: 1fr;
+  }
+
+  .email-div {
+    grid-column: 1;
+  }
+
+  .mensagem-div {
+    grid-column: 1;
+  }
+
+  .contato-titulo h1 {
+    margin-bottom: 0px;
+  }
+
+  .contato-conteudo {
+    grid-template-columns: 1fr;
+    padding: 0px 20px;
+  }
+
+  .loja-online {
+    padding: 20px 40px;
+  }
+
+  .loja-online h1 {
+    margin-bottom: 20px;
+  }
+
+  .loja-online p:nth-of-type(3) {
+    margin-bottom: 16px;
+  }
+
+  .loja-online p:nth-of-type(5) {
+    margin-bottom: 16px;
+  }
+
+  .loja-online p:nth-of-type(6) {
+    margin-bottom: 16px;
+  }
+
+  .lojas-bg {
+    margin-bottom: 50px;
+  }
+
+  .lojas-titulo {
+    margin-bottom: 30px;
+    padding: 0px 20px;
+  }
+
+  .lojas-titulo h1 {
+    margin: 0;
+  }
+
+  .lojas-conteudo {
+    grid-template-columns: 1fr;
+    padding: 0px 20px;
+  }
+
+  .contato-titulo::after {
+    display: none;
+  }
+}
+
+/* Celulares*/
+@media (max-width: 480px) {
+  .nossocontato-bg {
+    margin-bottom: 10px;
+  }
+
+  .contato-titulo {
+    padding: 0px 20px;
+    padding-top: 16px;
+  }
+
+  .contato-titulo p {
+    font-size: 1rem;
+  }
+
+  .contato-titulo h1 {
+    margin-bottom: 0px;
+    font-size: 2rem;
+  }
+
+  .lojas-bg {
+    margin-bottom: 20px;
+  }
+
+  .lojas-titulo {
+    margin-bottom: 10px;
+  }
+
+  .lojas-titulo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  .lojas div {
+    grid-template-columns: 1fr;
+  }
+
+  .lojas-conteudo h1 {
+    font-size: 1.5rem;
+    grid-column: 1;
+    margin-bottom: 10px;
+  }
+
+  .lojas-conteudo h2 {
+    margin-top: 20px;
+  }
+
+  .lojas div::before {
+    top: 45px;
+  }
+  
+  .contato-titulo::after {
+    display: none;
+  }
+}

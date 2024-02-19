@@ -1,0 +1,110 @@
+.footer {
+  background: #000000;
+  padding: 60px 40px 32px 40px;
+}
+
+.footerdiv {
+  margin: 0 auto;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0px 50px;
+}
+
+.footerdiv p {
+  line-height: 32px;
+}
+
+.footerdiv ul {
+  padding: 0;
+}
+
+.footerdiv > div:nth-child(2) li:not(:nth-child(3)) {
+  border-bottom: #111111 solid 2px;
+}
+
+.footer > div:nth-child(2) li:nth-child(3) {
+  display: flex;
+  gap: 0px 32px;
+  margin-top: 19px;
+}
+
+.informacoes {
+  list-style-type: none;
+}
+
+.informacoes a {
+  text-decoration: none;
+  color: #b2b2b2;
+}
+
+.informacoes li {
+  margin: 10px 0;
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .footerdiv {
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .footer h1 {
+    font-size: 1rem;
+  }
+
+  .footer li p,
+  .footer li {
+    font-size: 1rem;
+  }
+
+  .informacoes li {
+    margin: 3px 0;
+  }
+
+  .footerdiv p {
+    line-height: 15px;
+  }
+
+  .footer p:last-child {
+    margin-top: 20px;
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) {
+  .footer {
+    background: #000000;
+    padding: 35px 40px 32px 24px;
+  }
+
+  .footerdiv {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer h1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .footer ul {
+    margin-bottom: 0px;
+  }
+
+  .footer li p,
+  .footer li {
+    font-size: 1rem;
+  }
+
+  .informacoes li {
+    margin: 3px 0;
+  }
+
+  .footerdiv p {
+    line-height: 5px;
+  }
+
+  .footer p:last-child {
+    margin-top: 20px;
+  }
+}

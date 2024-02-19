@@ -1,0 +1,334 @@
+.escolhaseguro-bg {
+  background: #111;
+  position: relative;
+}
+
+.escolhaseguro-bg::before {
+  content: url(/img/dec/bottom-left.svg);
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.escolhaseguro-bg::after {
+  content: url(/img/dec/bottom-right.svg);
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.escolha-titulo {
+  padding: 60px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+  position: relative;
+}
+
+.escolha-titulo::after {
+  content: url(/img/dec/top-right.svg);
+  position: absolute;
+  max-width: 100%;
+  top: 60px;
+  right: 40px;
+}
+
+.escolha-titulo h1 {
+  margin: 8px 0px 0px 0px;
+}
+
+.escolha-seguro {
+  background: #111;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 40px;
+  gap: 40px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.vantagens-bg {
+  background: #000;
+  padding: 120px 0px;
+}
+
+.vantagens-titulo {
+  margin: 0 auto;
+  padding: 0px 40px;
+  max-width: 1400px;
+  margin-bottom: 90px;
+}
+
+.vantagens-conteudo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 0px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.vantagens-conteudo h1 {
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+.vantagens-conteudo p {
+  margin: 0;
+}
+
+.perguntas-bg {
+  padding: 120px 0px;
+}
+
+.perguntas-titulo {
+  padding: 0px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+  margin-bottom: 90px;
+}
+
+.perguntas-conteudo {
+  padding: 0px 40px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.perguntas-conteudo li:nth-child(odd) {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.perguntas-conteudo li:nth-child(even) {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.perguntas-conteudo li:not(:first-child) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perguntas-conteudo li:first-child div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perguntas-conteudo p {
+  max-width: 800px;
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .escolha-titulo {
+    padding: 0px 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .escolha-seguro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+  }
+
+  .prata {
+    margin-bottom: 0;
+    margin-top: 0px;
+  }
+
+  .vantagens-bg {
+    padding: 20px 0px;
+    padding-bottom: 40px;
+  }
+
+  .vantagens-titulo {
+    padding: 0px 20px;
+    margin-bottom: 25px;
+  }
+
+  .vantagens-titulo h1 {
+    font-size: 2.5rem;
+  }
+
+  .vantagens-conteudo {
+    padding: 0px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .vantagens-conteudo p {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+
+  .perguntas-bg {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .perguntas-titulo {
+    margin-bottom: 20px;
+    padding: 0px 20px;
+  }
+
+  .perguntas-titulo h1 {
+    font-size: 2rem;
+  }
+
+  .perguntas-conteudo {
+    padding: 0px 20px;
+  }
+
+  .escolhaseguro-bg::after {
+    display: none;
+  }
+
+  .escolhaseguro-bg::before {
+    display: none;
+  }
+  .escolha-titulo::after {
+    display: none;
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) {
+  .escolha-titulo {
+    padding: 0px 20px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .escolha-seguro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0px 20px;
+    padding-bottom: 40px;
+  }
+
+  .prata {
+    margin-bottom: 0;
+    margin-top: 0px;
+  }
+
+  .vantagens-bg {
+    padding: 20px 0px;
+    padding-bottom: 40px;
+  }
+
+  .vantagens-titulo {
+    padding: 0px 20px;
+    margin-bottom: 25px;
+  }
+
+  .vantagens-titulo h1 {
+    font-size: 2.5rem;
+  }
+
+  .vantagens-conteudo {
+    padding: 0px 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .vantagens-conteudo p {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+
+  .perguntas-bg {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  .perguntas-titulo {
+    margin-bottom: 20px;
+    padding: 0px 20px;
+  }
+
+  .perguntas-titulo h1 {
+    font-size: 2rem;
+  }
+
+  .perguntas-conteudo {
+    padding: 0px 20px;
+  }
+
+  .escolhaseguro-bg::after {
+    display: none;
+  }
+
+  .escolhaseguro-bg::before {
+    display: none;
+  }
+
+  .escolha-titulo::after {
+    display: none;
+  }
+}
+
+/* Celulares*/
+@media (max-width: 480px) {
+  .escolha-titulo {
+    margin-bottom: 5px;
+  }
+
+  .escolha-titulo h1 {
+    margin: 0;
+  }
+
+  .escolha-seguro {
+    padding-bottom: 0px;
+  }
+
+  .vantagens-bg {
+    padding: 0px 0px;
+    padding-bottom: 30px;
+  }
+
+  .vantagens-titulo {
+    margin-bottom: 0px;
+  }
+
+  .vantagens-titulo h1 {
+    font-size: 1.5rem;
+  }
+
+  .vantagens-conteudo {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .vantagens-conteudo h1 {
+    font-size: 1rem;
+  }
+
+  .perguntas-bg {
+    padding: 0px;
+  }
+
+  .perguntas-titulo {
+    margin: 0;
+    padding: 0px 20px;
+  }
+
+  .perguntas-titulo h1 {
+    font-size: 1.5rem;
+  }
+
+  .perguntas-conteudo {
+    padding: 0px 20px;
+    padding-bottom: 30px;
+  }
+
+  .escolhaseguro-bg::after {
+    display: none;
+  }
+
+  .escolha-titulo::after {
+    display: none;
+  }
+}

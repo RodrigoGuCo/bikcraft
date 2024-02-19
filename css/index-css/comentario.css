@@ -1,0 +1,219 @@
+.comentario {
+  background: #ffbb00;
+}
+
+.comentario > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  justify-items: start;
+  gap: 0 60px;
+}
+
+.comentario > div div {
+  position: relative;
+}
+
+.comentario > div div::before {
+  content: url(/img/dec/top-left-p.svg);
+  width: 9%;
+  top: -50px;
+  position: absolute;
+}
+
+.comentario > div div::after {
+  content: url(/img/dec/bottom-right-p.svg);
+  position: absolute;
+  width: 9%;
+  bottom: -70px;
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1280px) {
+  .comentario h1 {
+    font-size: 2rem;
+  }
+
+  .comentario > div div::before {
+    content: url(/img/dec/top-left-p.svg);
+    position: absolute;
+    top: -30px;
+  }
+
+  .comentario > div div::after {
+    content: url(/img/dec/bottom-right-p.svg);
+    position: absolute;
+    width: 9%;
+    bottom: -40px;
+  }
+}
+
+.comentario h1 {
+  font-family: "Merriweather";
+  max-width: 590px;
+  line-height: 48px;
+  font-style: black italic;
+  font-weight: 900;
+  font-size: 2.25rem;
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1280px) {
+  .comentario h1 {
+    font-size: 2rem;
+  }
+}
+
+.comentario p {
+  margin-top: 30px;
+}
+
+.comentario img {
+  max-width: 100%;
+}
+
+.comentario span:first-child {
+  font-size: 4.5rem;
+  color: #e4a30b;
+  margin-left: -57px;
+  margin-right: 0px;
+}
+
+.comentario span:nth-child(2) {
+  position: absolute;
+  font-size: 4rem;
+  color: #e4a30b;
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .comentario > div {
+    grid-template-columns: 1fr;
+  }
+
+  .comentario img {
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    width: 100%;
+  }
+
+  .comentario h1 {
+    font-family: "Merriweather";
+    max-width: 979px;
+    line-height: 40px;
+    font-style: black italic;
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 20px 20px;
+    padding-top: 30px;
+  }
+
+  .comentario p {
+    padding: 0px 20px;
+  }
+
+  .comentario > div div::before {
+    display: none;
+  }
+
+  .comentario > div div::after {
+    display: none;
+  }
+
+  .comentario span:first-child {
+    position: relative;
+    font-size: 4.5rem;
+    color: #e4a30b;
+    left: 50px;
+    bottom: 10px;
+  }
+
+  .comentario span:nth-child(2) {
+    position: absolute;
+    font-size: 4rem;
+    color: #e4a30b;
+
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) { 
+  .comentario > div {
+    grid-template-columns: 1fr;
+  }
+
+  .comentario img {
+    object-fit: cover;
+    object-position: center;
+    height: 300px;
+    width: 100%;
+  }
+
+  .comentario h1 {
+    font-family: "Merriweather";
+    max-width: 979px;
+    line-height: 28px;
+    font-style: black italic;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 20px 20px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+    
+  }
+
+  .comentario p {
+    padding: 0px 20px;
+    margin-top: 0px;
+  }
+
+  .comentario > div div::before {
+    display: none;
+  }
+
+  .comentario > div div::after {
+    display: none;
+  }
+
+  .comentario span:first-child {
+    position: absolute;
+    font-size: 4.5rem;
+    color: #e4a30b;
+    left: 70px;
+    top: 35px;
+  }
+
+  .comentario span:nth-child(2) {
+    position: absolute;
+    right: 10px;
+  }
+
+}
+
+/* Celulares*/
+@media (max-width: 480px) { 
+  .comentario h1 { 
+    font-size: 1.2rem;
+    line-height: 22px;
+    margin-top: 40px;
+  }
+
+  .comentario span:first-child {
+    position: absolute;
+    font-size: 4.5rem;
+    color: #e4a30b;
+    left: 70px;
+    top: 50px;
+  }
+  .comentario span:nth-child(2) {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 320px) {
+  .comentario span:nth-child(2) {
+    position: absolute;
+    right: 10px;
+  }
+}

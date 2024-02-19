@@ -1,0 +1,140 @@
+.opcoes {
+  margin-bottom: 120px;
+  margin-top: 190px;
+}
+
+.opcoes > div {
+  margin: 0 auto;
+  max-width: px;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1750px;
+  position: relative;
+}
+
+.opcoes > div > div {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+}
+
+.opcoes > div > div div {
+  flex: 1;
+  min-width: 210px;
+}
+
+.opcoes div img {
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.opcoes div h1,
+.opcoes div p {
+  margin: 5px 0px 0px 0px;
+}
+
+.opcoes .opt {
+  margin-bottom: 40px;
+  position: absolute;
+  left: 11.8%;
+  transform: translateX(-50%);
+  transform: translateY(-140%);
+}
+
+.op-d {
+  grid-column: 1 / span 3;
+  max-width: 1400px;
+}
+
+.opcoes div p {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.dec-op::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  background: #ffbb00;
+  margin-right: 8px;
+  width: 12px;
+  height: 8px;
+  bottom: 6px;
+}
+
+/* Tablet paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .opcoes > div { 
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .opcoes {
+    margin-bottom: 50px;
+    margin-top: 130px;
+  }
+  .opcoes .opt {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    position: absolute;
+    left: 2.5%;
+    transform: translateX(-50%);
+    transform: translateY(-140%);
+  }
+
+  .opcoes > div > div h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Celular em modo paisagem para tablet em modo retrato */
+@media (max-width: 767px) { 
+  .opcoes > div { 
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .opcoes {
+    margin-bottom: 50px;
+    margin-top: 0px;
+  }
+  .opcoes .opt {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    position: absolute;
+    left: 2.5%;
+    transform: translateX(-50%);
+    transform: translateY(-140%);
+  }
+
+  .opcoes > div > div h1 {
+    font-size: 1.4rem;
+  }
+
+  .opcoes > div > div div {
+    padding-bottom: 20px;
+  }
+}
+
+ /* Celulares*/
+ @media (max-width: 480px) {
+  .opcoes > div { 
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .opcoes .opt {
+    font-size: 2rem;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 5%;
+    transform: translateX(-50%);
+    transform: translateY(-110%);
+  }
+  
+  .opcoes > div > div div {
+    padding-bottom: 20px;
+  }
+ }
