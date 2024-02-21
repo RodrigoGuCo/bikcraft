@@ -50,7 +50,6 @@ body {
   margin-left: 28px;
 }
 
-
 .mt-160 {
   margin-top: 160px;
 }
@@ -186,6 +185,12 @@ body {
   font-size: 1.125rem;
   line-height: 24px;
   font-weight: 500;
+}
+
+.font-1-m-b {
+  font-size: 1.125rem;
+  line-height: 24px;
+  font-weight: 600;
 }
 
 .font-2-m {
@@ -330,7 +335,7 @@ ul {
 
 .dec-me::before {
   position: absolute;
-  content: url(/img/icones/eletrica.svg);
+  content: url(../img/icones/eletrica.svg);
   display: inline-block;
   left: -40px;
 }
@@ -338,7 +343,7 @@ ul {
 .dec-fc::before {
   bottom: -10px;
   position: absolute;
-  content: url(/img/icones/carbono.svg);
+  content: url(../img/icones/carbono.svg);
   display: inline-block;
   left: -40px;
 }
@@ -346,7 +351,7 @@ ul {
 .dec-km::before {
   bottom: -10px;
   position: absolute;
-  content: url(/img/icones/velocidade.svg);
+  content: url(../img/icones/velocidade.svg);
   display: inline-block;
   left: -40px;
 }
@@ -354,7 +359,7 @@ ul {
 .dec-rt::before {
   bottom: -10px;
   position: absolute;
-  content: url(/img/icones/rastreador.svg);
+  content: url(../img/icones/rastreador.svg);
   display: inline-block;
   left: -40px;
 }

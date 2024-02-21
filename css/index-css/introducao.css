@@ -100,7 +100,6 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
-    content: url("/img/bicicletas/nimbus.jpg");
   }
 
   .introducao > div div:nth-child(2) {
@@ -162,7 +161,6 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
-    content: url("/img/bicicletas/nimbus.jpg");
   }
 
   .introducao > div div:nth-child(2) {

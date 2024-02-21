@@ -25,6 +25,20 @@
   text-decoration: none;
 }
 
+.navegacao a::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s;
+}
+
+.navegacao a:hover::after, .navegacao a.ativo::after {
+  width: 100%;
+}
 /* Celular em modo paisagem para tablet em modo retrato */
 @media (max-width: 767px) {
   .navegacao a {

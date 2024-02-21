@@ -53,6 +53,7 @@
   background: #2e2e2e;
   border-radius: 5px;
   padding: 16px 18px;
+  padding-left: 30px;
   display: block;
   cursor: pointer;
 }
@@ -131,7 +132,7 @@
 #nimbus-escolhido li,
 #nebula-escolhido li,
 #magic-escolhido li {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 8px;
   position: relative;
 }

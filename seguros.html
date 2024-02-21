@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seguros</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -39,7 +40,7 @@
           <li class="w">Suporte 08h às 18h</li>
           <li class="w">Cobertura estadual</li>
         </ul>
-        <a class="btn-2" href="./orcamento.html">INSCREVA-SE</a>
+        <a class="btn-2" href="./orcamento.html?produto=seguro&seguro=prata">INSCREVA-SE</a>
       </div>
       <div class="ouro">
         <h1 class="font-1-xl p1 s-bld">OURO</h1>
@@ -53,7 +54,7 @@
           <li class="w">Desconto em parceiros</li>
           <li class="w mg-p">Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="btn p4" href="./orcamento.html">INSCREVA-SE</a>
+        <a class="btn p4" href="./orcamento.html?produto=seguro&seguro=ouro">INSCREVA-SE</a>
       </div>
     </div>
   </section>
@@ -98,33 +99,33 @@
     <div class="perguntas-titulo">
       <h1 class="font-1-xxl s-bld mbt-0">perguntas frequentes<span class="p1">.</span></h1>
     </div>
-    <ul class="perguntas-conteudo">
-      <li>
-        <div>
-          <p class="font-1-m s-bld ">Qual forma de pagamento vocês aceitam?</p>
-          <span><img src="./img/icones/seta-abrir.svg" alt="seta-abrir"></span>
-        </div>
-        <p class="font-2-m c9 mbt-0">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitamos PIX e Boleto através do Pagseguro.</p>
-      </li>
-      <li class="font-1-m s-bld">Como posso entrar em contato?
-        <span><img src="./img/icones/seta-abrir.svg" alt="seta-abrir"></span>
-      </li>
-      <li class="font-1-m s-bld">Vocês possuem algum desconto?
-        <span><img src="./img/icones/seta-abrir.svg" alt="seta-abrir"></span>
-      </li>
-      <li class="font-1-m s-bld">Qual a garantia que possuo?
-        <span><img src="./img/icones/seta-abrir.svg" alt="seta-abrir"></span>
-      </li>
-      <li class="font-1-m s-bld">Posso parcelar no boleto?
-        <span><img src="./img/icones/seta-abrir.svg" alt="seta-abrir"></span>
-      </li>
-      <li class="font-1-m s-bld">Quantas trocas posso fazer ao ano?
-        <span><img src="./img/icones/seta-abrir.svg" alt="seta-abrir"></span>
-      </li>
-      <li class="font-1-m s-bld">Qual Bikcraft devo escolher para o meu tamanho?
-        <span><img src="./img/icones/seta-abrir.svg" alt="seta-abrir"></span>
-      </li>
-    </ul>
+
+    <dl>
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+        <dd id="pergunta1" class="font-2-s c9 ativa">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+        <dd id="pergunta2" class="font-2-s c9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+        <dd id="pergunta3" class="font-2-s c9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+        <dd id="pergunta4" class="font-2-s c9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+        <dd id="pergunta5" class="font-2-s c9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+      <div>
+        <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+        <dd id="pergunta6" class="font-2-s c9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+      </div>
+    </dl>
   </section>
   <section class="footer" id="footer" aria-label="Footer">
     <div class="footerdiv">
@@ -159,6 +160,7 @@
     </div>
     <p class="c6 font-2-m mt-80">Bikcraft © Alguns direitos reservados.</p>
   </section>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

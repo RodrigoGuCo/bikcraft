@@ -82,41 +82,71 @@
 }
 
 .perguntas-titulo {
-  padding: 0px 40px;
   margin: 0 auto;
   max-width: 1400px;
   margin-bottom: 90px;
+  padding: 0px 40px;
 }
 
-.perguntas-conteudo {
-  padding: 0px 40px;
+.perguntas-bg dl {
   margin: 0 auto;
   max-width: 1400px;
+  padding: 0px 40px;
 }
 
-.perguntas-conteudo li:nth-child(odd) {
-  background: #f7f7f7;
+.perguntas-bg dl > div {
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
-.perguntas-conteudo li:nth-child(even) {
-  padding: 20px;
-  border-radius: 5px;
+.perguntas-bg dl > div:nth-child(odd) {
+  background-color: #f7f7f7;
 }
 
-.perguntas-conteudo li:not(:first-child) {
-  display: flex;
-  justify-content: space-between;
+.perguntas-bg button {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
 }
 
-.perguntas-conteudo li:first-child div {
-  display: flex;
-  justify-content: space-between;
+.perguntas-bg button::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: #ffbb00;
 }
 
-.perguntas-conteudo p {
-  max-width: 800px;
+.perguntas-bg button::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: url("../../img/icones/seta-abrir.svg");
+  transition: 0.3s;
+}
+
+.perguntas-bg button:hover::after,
+.perguntas-bg button[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+
+.perguntas-bg dd {
+  padding-left: 20px;
+  padding-top: 16px;
+  max-width: 80ch;
+  margin-left: 0px;
+  display: none;
+}
+
+.perguntas-bg dd.ativa {
+  display: block;
 }
 
 /* Tablet paisagem e desktop */
@@ -268,6 +298,14 @@
   .escolha-titulo::after {
     display: none;
   }
+
+  .perguntas-bg dl {
+    padding: 0px 20px;
+  }
+
+  .perguntas-bg dl div {
+    padding: 20px 20px;
+  }
 }
 
 /* Celulares*/
@@ -330,5 +368,13 @@
 
   .escolha-titulo::after {
     display: none;
+  }
+
+  .perguntas-bg dl {
+    padding: 0px 20px;
+  }
+
+  .perguntas-bg dl div {
+    padding: 20px;
   }
 }
